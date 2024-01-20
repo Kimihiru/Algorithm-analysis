@@ -1,0 +1,29 @@
+package ac;
+
+import java.util.*;
+
+public class Suqen {
+	public static boolean isPrime(int x) {
+		for(int i=2;i*i<=x;i++) {
+			if(x%i==0) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int n=sc.nextInt();
+		int x=0,y=0;
+		while((x*a+y*b)<n&&x<y) {
+			x++;
+			y++;
+		}
+		System.out.println(x+y);
+		sc.close();
+	}
+
+}

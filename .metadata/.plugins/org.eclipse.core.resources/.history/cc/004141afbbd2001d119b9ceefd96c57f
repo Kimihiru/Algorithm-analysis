@@ -1,0 +1,10 @@
+package ac;
+
+public class PardomeDay {
+
+	public static void main(String[] args) {
+		int n=20200202;
+		System.out.println(n%100);
+	}
+
+}

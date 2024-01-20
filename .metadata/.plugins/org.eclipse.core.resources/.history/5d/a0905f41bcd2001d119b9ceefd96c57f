@@ -1,0 +1,16 @@
+package ac;
+
+public class PardomeDay {
+	public static boolean isDay(int x) {
+		if(((x/100)%100)%2!=0&&x%100>=32) {
+			return false;
+		}
+		if()
+	}
+	public static void main(String[] args) {
+		int n=20200202;
+		System.out.println(n%100);
+		System.out.println((n/100)%100);
+	}
+
+}
