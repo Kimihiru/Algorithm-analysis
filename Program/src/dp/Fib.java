@@ -2,15 +2,23 @@ package dp;
 
 import java.util.Scanner;
 
-/**
+/*
  * @author Sakura
  * dp解斐波那契数列
  * 分治解斐波那契数列
  */
 public class Fib {
+    /*
+     *分治算法
+     *执行用时:9ms
+     */
     public static int fib(int n){
         return n<2? n:fib(n-1)+fib(n-2);
     }
+    /*
+     *动态规划算法
+     *执行用时:0ms
+     */
     public static int dpFib(int n){
         if(n<2){
             return n;
