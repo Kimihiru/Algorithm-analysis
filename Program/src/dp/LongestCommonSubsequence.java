@@ -16,15 +16,10 @@ public class LongestCommonSubsequence {
 			for(int j=1;j<=n;j++) {
 				if(x[i-1]==y[j-1]) {
 					c[i][j]=c[i-1][j-1]+1;
-				}else if(c[i-1][j]>=c[i][j-1]) {
-					c[i][j]=c[i-1][j];
-				}else {
-					c[i][j]=c[i][j-1];
 				}
-				/*
-				 * else {
+				else {
 					c[i][j]=Math.max(c[i-1][j],c[i][j-1)];
-				}*/
+				}
 			}
 		}
 		return c[m][n];
