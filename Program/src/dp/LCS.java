@@ -26,7 +26,7 @@ public class LCS {
 		if(i==0||j==0)return;
 		if(b[i][j]==1) {
 			LCSOUT(b,x,i-1,j-1);
-			System.out.print(x[i-1]);//cout<<x[i-1];
+			System.out.print(x[i-1]);
 		}else if(b[i][j]==2) {
 			LCSOUT(b,x,i-1,j);
 		}else {
@@ -38,7 +38,7 @@ public class LCS {
 			for(int j=0;j<n;j++) {
 				System.out.print(a[m][n]+" ");
 			}
-			System.out.println();//cout<<endl;
+			System.out.println();
 		}
 	}
 	public static void main(String[] args) {
