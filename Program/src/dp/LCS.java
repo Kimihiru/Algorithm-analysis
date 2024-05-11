@@ -36,7 +36,7 @@ public class LCS {
 	public static void output(int[][] a, int m, int n) {
 		for(int i=0;i<m;i++) {
 			for(int j=0;j<n;j++) {
-				System.out.print(a[m][n]+" ");/
+				System.out.print(a[m][n]+" ");
 			}
 			System.out.println();//cout<<endl;
 		}
