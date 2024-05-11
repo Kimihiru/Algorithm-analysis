@@ -36,7 +36,7 @@ public class LCS {
 	public static void output(int[][] a, int m, int n) {
 		for(int i=0;i<m;i++) {
 			for(int j=0;j<n;j++) {
-				System.out.print(a[m][n]+" ");//cout<<a[m][n]<<" ";
+				System.out.print(a[m][n]+" ");/
 			}
 			System.out.println();//cout<<endl;
 		}
@@ -49,12 +49,12 @@ public class LCS {
 		int[][] c=new int[m+1][n+1];
 		int[][] b=new int[m+1][n+1];
 		LCSLength(x,y,m,n,c,b);
-//		System.out.println("C¾ØÕó");
+//		System.out.println("CçŸ©é˜µ");
 //		output(c,m,n);
-//		System.out.println("B¾ØÕó");
+//		System.out.println("BçŸ©é˜µ");
 //		output(b,m,n);
-		System.out.println("×î³¤¹«¹²×ÓÐòÁÐµÄ³¤¶ÈÊÇ"+c[m][n]);
-		System.out.print("×î³¤¹«¹²×ÓÐòÁÐÊÇ:");
+		System.out.println("æœ€é•¿å…¬å…±å­åºåˆ—çš„é•¿åº¦æ˜¯"+c[m][n]);
+		System.out.print("æœ€é•¿å…¬å…±å­åºåˆ—æ˜¯:");
 		LCSOUT(b,x,m,n);
 	}
 }
